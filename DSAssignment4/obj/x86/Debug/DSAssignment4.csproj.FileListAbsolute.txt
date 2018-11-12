@@ -1,0 +1,4 @@
+c:\users\alias\documents\visual studio 2010\Projects\DSAssignment4\DSAssignment4\bin\Debug\DSAssignment4.exe
+c:\users\alias\documents\visual studio 2010\Projects\DSAssignment4\DSAssignment4\bin\Debug\DSAssignment4.pdb
+c:\users\alias\documents\visual studio 2010\Projects\DSAssignment4\DSAssignment4\obj\x86\Debug\DSAssignment4.exe
+c:\users\alias\documents\visual studio 2010\Projects\DSAssignment4\DSAssignment4\obj\x86\Debug\DSAssignment4.pdb
