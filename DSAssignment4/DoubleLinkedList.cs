@@ -63,29 +63,43 @@ namespace DSAssignment4
             }
         }
 
-        //public void insertafter(string _afterdata, string[] _data)
-        //{
-        //    Node current = head;
-        //    Node newnode = new Node(_data);
-        //    while (current != null)
-        //    {
-        //        if (current.Data == _afterdata)
-        //        {
-        //            newnode.NextNode = current.NextNode;
-        //            if (current.NextNode == null)
-        //            {
-        //                InsertAtTail(_data);
-        //                return;
-        //            }
-        //            current.NextNode.PreviousNode = newnode;
-        //            current.NextNode = newnode;
-        //            newnode.PreviousNode = current;
-        //            return;
+        public void InsertAfterGivenSid(string sid, string[] data)
+        {
+            Console.WriteLine(sid+data[0]);
+            Node current = head;
+                Node newnode = new Node(data);
+                while (current != null)
+                {
+                    if (current.data[2] == sid)
+                    {
+                        newnode.NextNode = current.NextNode;
+                        if (current.NextNode == null)
+                        {
+                            InsertAtTail(data);
+                            return;
+                        }
+                        current.NextNode.PreviousNode = newnode;
+                        current.NextNode = newnode;
+                        newnode.PreviousNode = current;
+                        return;
 
-        //        }
-        //        current = current.NextNode;
-        //    }
+                    }
+                    current = current.NextNode;
+                }
 
-        //}
+        }
+        public void PrintingMarks(string sid)
+        {
+            Node current = head;
+            while (current != null)
+            {
+                if (current.data[2] == sid)
+                {
+                    Console.WriteLine(current.data[0] + "/" + current.data[1] + "/" + current.data[2]);
+                }
+                current = current.NextNode;
+            }
+
+        }
     }
 }
